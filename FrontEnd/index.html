@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Appointment</title>
+    
+</head>
+<body>
+    <form onsubmit="handleFormSubmit(event)">
+        
+        <label for="userName">User Name :</label>
+        <input type="text" name="userName" id="userName" required />
+        <label for="phone">phone No</label>
+        <input type="number" name="phone" id="phone" required />
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required />
+        <button type="submit">Book Appointment</button>
+    </form>
+    <h1>Appointment Details</h1>
+    <ul id="UserDetails"></ul>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
